@@ -1,3 +1,164 @@
-h1, h2, h3, p {
+.main-container {
     color: white;
+    /* width: 70%;
+    max-width: 1440px;
+     margin: 0 auto; */
+     width: 1200px;
+     padding: 80px;
+
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    width: 400px;
+}
+
+.hero h1 {
+    padding-right: 20px;    
+}
+
+.CTA {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 15px;
+    min-height: 350px;    
+}
+
+.CTA button:first-child {
+    background-color: #DD5B0C;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.CTA button:last-child {
+    background-color: #1a211d;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.CTA button:hover {
+    background-color: #2C6E9B;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 700px;
+    min-height: 600px;
+    background-image: linear-gradient(to left top, #25be9a, #e5d7a8);
+    border-radius: 25px;
+}
+
+.box p {
+    background-color: #1a211d;
+    color: #49b38c;
+    align-self: flex-end;
+    border-radius: 10px;
+    padding: 3px 5px;
+    margin-right: 10px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 80px;
+}
+
+.service-01 {
+    border: solid 2px #516158;
+    width: 400px;
+    background-color: #2e3b34;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 10px;
+    height: 10px;
+}
+
+.service-01 div:first-child {
+    color: #DD5B0C;
+}
+
+.service-01:hover {
+    background-color: #2C6E9B;
+}
+
+.service-02 {
+    border: solid 2px #516158;
+    width: 400px;
+    background-color: #2e3b34;
+    border-radius: 10px;
+}
+
+.service-02 div:first-child {
+    color: #DD5B0C;
+}
+
+.service-02:hover {
+    background-color: #2C6E9B;
+}
+
+.service-03 {
+    border: solid 2px #516158;
+    width: 400px;
+    background-color: #2e3b34;
+    border-radius: 10px;    
+}
+
+.service-03 div:first-child {
+    color: #DD5B0C;
+}
+
+.service-03:hover {
+    background-color: #2C6E9B;
+}
+
+.information {
+    border: solid 2px #516158;
+    background-color: #2e3b34;
+    border-radius: 10px;   
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.adress p:last-child {
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.open-weekdays p:last-child {
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.open-weekends p:last-child {
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.information button {
+    background-color: #2e3b34;
+    border: solid 2px #516158;
+    border-radius: 10px; 
+    padding: 5px 15px;
+    align-self: center;
+    color: white;
+    font-weight: bold;
+}
+
+.information button:hover {
+    background-color: #2C6E9B;
 }
