@@ -1,0 +1,21 @@
+h1, h3 {
+    color: whitesmoke;
+}
+p, h2 {
+    color: lightgrey;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin:0px 25% 0px 25%;
+}
+.servicesinfo {
+    display: flex;
+    gap: 2%;
+
+}
+.card{
+    border: 2px solid #2a422a;
+    border-radius: 10px;
+    background-color: #1c2c1c;
+}
