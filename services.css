@@ -1,21 +1,47 @@
 h1, h3 {
-    color: whitesmoke;
-}
-p, h2 {
     color: lightgrey;
 }
-.container{
+p, h2 {
+    color: #9a9e9b;
+}
+h2 {
+    font-size: medium;
+    padding: ;
+}
+body{
     display: flex;
     flex-direction: column;
-    margin:0px 25% 0px 25%;
+    margin:5% 25% 0px 25%;
 }
 .servicesinfo {
     display: flex;
     gap: 2%;
+    padding-bottom: 3%;
 
 }
+.head{
+    border-top: 2px solid #213621;
+    border-bottom: 2px solid #213621;
+}
+
 .card{
-    border: 2px solid #2a422a;
+    border: 2px solid #213621;
     border-radius: 10px;
-    background-color: #1c2c1c;
+    background-color: #182718;
+    padding: 2%;
+    min-width: 200px;
+    max-width: 500px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #213621;
+}
+.entrance{
+    border: 2px solid #213621;
+    background-color: #213d2e;
+    border-radius: 10px;
+    padding: 0 2% 0 2% ;
+    margin-top: 2%;
+    color: whitesmoke;
 }
