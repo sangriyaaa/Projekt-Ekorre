@@ -1,0 +1,127 @@
+.transport {
+    display: flex;
+    gap: 20px;
+}
+
+.transport > div {
+    background-color: #222822;
+    border: 1px solid #2f3630;
+    border-radius: 8px;
+    padding: 20px;
+}
+p, summary {
+    color: #9FB0A0;
+}
+address {
+    font-style: normal;
+}
+input {
+    display: flex;
+}
+button {
+    background-color: #DD5B0C;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #1a211d;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    appearance: none;
+}
+.kontakt-topp {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media screen and (min-width: 992px) {
+    .kontakt-topp {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .kontakt-info,
+    .kontakt-topp form {
+        flex: 1;
+    }
+}
+label {
+    color: #eef2ec;
+}
+textarea {
+    display: flex;
+}
+@media screen and (max-width: 576px){
+    .transport {
+        display: flex;
+        flex-direction: column;
+    }
+}
+summary { 
+    list-style: none; cursor: pointer;
+}
+summary::-webkit-details-marker { 
+    display: none; }
+summary::after { 
+    content: " +"; 
+    color: #DD5B0C;
+}
+details[open] summary::after { 
+    content: "–";
+}
+address svg {
+    width: 14px;
+    height: 14px;
+    color: #DD5B0C;
+    padding-right: 8px;
+}
+address > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+address p {
+    margin: 0;
+}
+address > div {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.etikett-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+address a {
+    color: #9FB0A0;
+    text-decoration: none;
+}
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 0 24px;
+    }
+}
+address p,
+address a {
+    font-size: 0.95rem;
+    color: #9FB0A0;
+}
+address strong {
+    color: #9FB0A0;
+}
+h1 {
+    border-top: 1px solid #2f3630;
+    padding-top: 12px;
+}

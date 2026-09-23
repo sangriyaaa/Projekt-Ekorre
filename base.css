@@ -1,8 +1,17 @@
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Big Shoulders", sans-serif;
     text-transform: uppercase;
+    color: #eef2ec;
 }
 body {
     font-family: "Karla", sans-serif;
     background-color: #1a211d;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #2C6E9B;
+    outline-offset: 2px;
 }
