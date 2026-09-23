@@ -6,42 +6,86 @@ p, h2 {
 }
 h2 {
     font-size: medium;
-    
 }
 body{
     display: flex;
     flex-direction: column;
-    margin:5% 25% 0px 25%;
+    margin:5% 25% 5% 25%;
 }
 .servicesinfo {
-    display: flex;
-    gap: 2%;
+    display: flex;    
     padding-bottom: 3%;
+    gap: 2%;
+}
 
+.card{
+    border: 2px solid #172621;
+    background-color: #172621;
+    border-radius: 10px;
+    padding: 2%;
+    
+    
 }
 .head{
     border-top: 2px solid #213621;
     border-bottom: 2px solid #213621;
 }
-
-.card{
-    border: 2px solid #213621;
-    border-radius: 10px;
-    background-color: #182718;
-    padding: 2%;
-    min-width: 200px;
-    max-width: 500px;
-}
 .row{
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #213621;
+    border-bottom: 1px solid #55665D;
 }
-.entrance{
-    border: 2px solid #213621;
-    background-color: #213d2e;
+.entrance {
+    display: flex;
+    gap: 10px;
+    border: 2px solid #1F6F52;
+    background-color: #1b3226;
+    color: lightgray;
     border-radius: 10px;
-    padding: 0 2% 0 2% ;
     margin-top: 2%;
-    color: whitesmoke;
+    padding: 2%;
+}
+.doortext {
+    margin: 0;
+}
+.orderinfo {
+    display: flex;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: 2px solid #55665D;
+    justify-content: space-between;
+}
+.order {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2% 0 2%;                        
+}
+
+p.terms {
+    margin-bottom: 0;
+    font-size: small
+;
+}
+.conditions {
+    margin-top: 0%;
+}
+.price {
+    
+    
+}
+
+@media (max-width: 13700px) {
+ body {
+    margin:5% 15% 5% 15%;
+ }
+}
+@media (max-width: 768px) {
+ body {
+    margin:5% 5% 5% 5%;
+ }
+}
+@media (max-width: 550px) {
+ body {
+    margin:5%;
+ }
 }
