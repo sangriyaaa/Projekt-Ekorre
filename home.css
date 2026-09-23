@@ -8,6 +8,36 @@
 
 }
 
+.navigation, a {
+    color: #9FB0A0;
+}
+
+.navigation {
+    display: flex; 
+    width: auto;
+    background-color: #1a211d;
+    justify-content: space-between;
+    border-bottom: solid 1px #2f3630;
+    gap: 20px;
+    position: sticky;
+    top: 0px;
+
+}
+
+.logo-icon {
+    align-self: center;
+}
+
+.links {
+    margin-left: auto;
+    align-self: center;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+}
+
 .container-1 {
     display: flex;
     justify-content: space-between;
