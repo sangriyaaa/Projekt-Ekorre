@@ -1,4 +1,4 @@
-.main-container {
+.main-container, .navigation {
     color: white;
     /* width: 70%;
     max-width: 1440px;
@@ -6,6 +6,28 @@
      width: 1200px;
      padding: 80px;
 
+}
+
+.navigation {
+    border: solid 10px yellow;
+    display: flex; 
+    width: 1200px;   
+    justify-content: space-between;
+  
+}
+
+.logo-icon {
+    border: solid 10px red;
+    align-self: center;
+}
+
+.logo-text {
+    border: solid 10px green;
+}
+
+.links {
+    border: solid 10px blue;
+    margin-left: auto;
 }
 
 .container-1 {
