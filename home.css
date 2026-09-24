@@ -3,7 +3,7 @@
     /* width: 70%;
     max-width: 1440px;
      margin: 0 auto; */
-     width: 1200px;
+     max-width: 1536px;
      padding: 80px;
 
 }
@@ -40,7 +40,7 @@ a {
 
 .container-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .hero {
@@ -99,8 +99,8 @@ a {
 
 .services {
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
+    justify-content: center;
+    gap: 25px;
     margin-top: 80px;
 }
 
@@ -154,14 +154,16 @@ a {
     background-color: #2C6E9B;
 }
 
-.information {
+.information {   
     border: solid 2px #516158;
     background-color: #2e3b34;
     border-radius: 10px;   
-    padding: 0px 20px;
+    padding: 0px 10px;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    width: 80%;
+    margin: 50px auto 0;
 }
 
 .adress p:last-child {
