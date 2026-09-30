@@ -8,7 +8,7 @@ body {
     font-family: "Karla", sans-serif;
     background-color: #1a211d;
 }
-.navigation {
+/*.navigation {
     display: flex; 
     width: auto;   
     background-color: #1a211d;
@@ -34,7 +34,7 @@ body {
     padding: 10px;
     text-decoration: none;
 }
-    
+   flyttar till _header.scss  */ 
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -43,7 +43,7 @@ summary:focus-visible {
     outline: 3px solid #2C6E9B;
     outline-offset: 2px;
 }
-.footer {
+/*.footer {
     display: flex; 
     width: auto;   
     justify-content: space-between;
@@ -58,4 +58,4 @@ summary:focus-visible {
     padding: 10px;
     text-decoration: none;
 
-}
+} flyttar till _footer.scsss */
