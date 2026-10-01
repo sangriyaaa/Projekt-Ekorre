@@ -47,12 +47,13 @@ h1, h3 {
   color: lightgrey;
 }
 
-p, h2 {
+p {
   color: #9a9e9b;
 }
 
-h2 {
-  font-size: medium;
+.subheading {
+  font-size:large;
+  color: #9a9e9b;
 }
 
 .container {
