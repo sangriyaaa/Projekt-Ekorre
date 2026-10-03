@@ -39,12 +39,17 @@ a { color: inherit; text-decoration: none; }
     gap: 20px;
     position: sticky;
     top: 0px;
+    z-index: 100;
 
 }
 
-.logo-icon {
-    align-self: center;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+.brand svg { width: 28px; height: 28px; flex: none; }
+.brand b, .brand small { display: block; }
 
 h3 {
     display: block;
@@ -151,4 +156,80 @@ h1 {
 }
 .es .avatar { 
     background: var(--tan); color: #2a2a1a; 
+}
+
+h2 { margin: 70px 0 4px; font-size: 20px; color: var(--head); }
+.sub { margin: 0 0 30px; font-size: 16px; }
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 24px;
+  border-left: 2px solid var(--line);
+  max-width: 560px;
+}
+.timeline li { 
+    position: relative; margin-bottom: 20px; 
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--orange);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--bg);   /* gap that "cuts" the line behind the dot */
+}
+
+.year { 
+    font-family: var(--mono); font-size: 12px; color: var(--orange); 
+}
+.timeline h4 { 
+    margin: 0; font-size: 15.5px; color: var(--head); 
+}
+.timeline p { 
+    margin: 4px 0 0; font-size: 14px; line-height: 1.55; 
+}
+
+.stats {
+  margin: 38px 0 64px;
+  background: var(--bg2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.stats span {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.stats b { display: block; font-size: 17px; color: var(--head); margin-top: 2px; }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 44px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+@media (max-width: 760px) {
+  header { flex-direction: column; align-items: flex-start; gap: 12px; padding: 14px 20px; }
+  nav { gap: 18px; flex-wrap: wrap; }
+  .about { grid-template-columns: 1fr; gap: 20px; }
+  .team { margin-top: 10px; }
+  .avatar { margin-top: 0; }
+  footer { padding: 20px; }
 }
