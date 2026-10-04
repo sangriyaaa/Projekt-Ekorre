@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cykelverkstan Ekorren</title>
-    <link rel="stylesheet" href="about.css">
+    <title>Om oss – Cykelverkstan Ekorren</title>
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700&family=Karla:wght@400;700&family=Fragment+Mono&display=swap "rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700&family=Karla:wght@400;700&family=Fragment+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#main">Hoppa till huvudinnehållet</a>
     <header class="navigation">
-        <a class="brand" href="index.html" aria-label="Ekorren, startsida">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="ForestGreen" class="bi bi-bicycle" viewBox="0 0 16 16">
-            <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z"/>
+        <a class="brand" href="index.html" aria-label="EKORREN Cykelverkstad &amp; uthyrning, startsida">
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="50" height="50" fill="ForestGreen" viewBox="0 0 16 16">
+                <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z"/>
             </svg>
             <span class="logo-text">
                 <span class="logo-name">EKORREN</span>
@@ -31,64 +32,50 @@
         
     </header>
 
-    <main class="main.container">
+    <main id="main">
         <h1>Om oss</h1>
         <section class="about">
             <div>
                 <p>Ekorren startades 2011 av Nadia och Pontus, två cykelmekaniker som tyckte att bra service inte skulle behöva ta en vecka. Idag är vi fyra i verkstaden och lagar allt från lådcyklar till gamla racers.</p>
                 <p>Vi tror på att laga hellre än att sälja nytt, och att alla ska kunna komma in och fråga något dumt utan att känna sig dumma.</p>
-                <ul class="checks">
-                    <li svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon"> 
-                       Ärliga priser, alltid en kostnadsuppskattning innan vi börjar 
-                    </li>
-                    <li svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
-                       Vi lagar det som går att laga, i första hand
-                    </li>
-                    <li svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
-                       Tillgängligt för alla — ramp, bred dörr, sittplats i väntrummet
-                    </li>
+                <ul class="checks" role="list">
+                    <li>Ärliga priser, alltid en kostnadsuppskattning innan vi börjar</li>
+                    <li>Vi lagar det som går att laga, i första hand</li>
+                    <li>Tillgängligt för alla — ramp, bred dörr, sittplats i väntrummet</li>
                 </ul>
             </div>
             <h2 class="visually-hidden">Teamet</h2>
-            <ul class="team">
+            <ul class="team" role="list">
                 <li class="person nk">
-                    <div class="avatar">NK</div>
+                    <div class="avatar" aria-hidden="true">NK</div>
                     <div>
                         <h3>Nadia Karlsson</h3>
-                        <span class="role">Grundare & Mekaniker</span>
-                        <p>
-                            Kan det mesta om gamla growth-racers och tystar en knarrig kedja på under en minut.
-                        </p>
+                        <span class="role">Grundare &amp; Mekaniker</span>
+                        <p>Kan det mesta om gamla growth-racers och tystar en knarrig kedja på under en minut.</p>
                     </div>
                 </li>
                 <li class="person pl">
-                    <div class="avatar">PL</div>
+                    <div class="avatar" aria-hidden="true">PL</div>
                     <div>
                         <h3>Pontus Lindqvist</h3>
-                        <span class="role">Grundare & Mekaniker</span>
-                        <p>
-                            Vi tror på att laga hellre än att sälja nytt, och att alla ska kunna komma in och fråga något dumt utan att känna sig dumma.
-                        </p>
+                        <span class="role">Grundare &amp; Mekaniker</span>
+                        <p>Sköter de flesta storservicarna och håller ordning på reservdelslagret.</p>
                     </div>
                 </li>
                 <li class="person sa">
-                    <div class="avatar">SA</div>
+                    <div class="avatar" aria-hidden="true">SA</div>
                     <div>
                         <h3>Sara Ahlgren</h3>
-                        <span class="role">Mekaniker & Uthyrning</span>
-                        <p>
-                            Ansvarar för uthyrningscyklarna och hjälper gärna nya cyklister komma igång.
-                        </p>
+                        <span class="role">Mekaniker &amp; Uthyrning</span>
+                        <p>Ansvarar för uthyrningscyklarna och hjälper gärna nya cyklister komma igång.</p>
                     </div>
                 </li>
                 <li class="person es">
-                    <div class="avatar">ES</div>
+                    <div class="avatar" aria-hidden="true">ES</div>
                     <div>
                         <h3>Elias Ström</h3>
                         <span class="role">Mekaniker</span>
-                        <p>
-                            Van vid elcyklar och lådcyklar — den man frågar om något krånglar elektriskt.
-                        </p>
+                        <p>Van vid elcyklar och lådcyklar — den man frågar om något krånglar elektriskt.</p>
                     </div>
                 </li>
             </ul>
@@ -97,25 +84,25 @@
         <p class="sub">
             Från källarlokal till fyra mekaniker på gatuplan — så här har det gått till.
         </p>
-        <ol class="timeline">
+        <ol class="timeline" role="list">
             <li>
                 <span class="year">2011</span>
-                <h4>Verkstaden öppnar</h4>
+                <h3>Verkstaden öppnar</h3>
                 <p>Nadia och Pontus hyr en källarlokal på Skånegatan och lagar sin första kundcykel en regnig tisdag i mars.</p>
             </li>
             <li>
                 <span class="year">2015</span>
-                <h4>Flytt till gatuplan</h4>
+                <h3>Flytt till gatuplan</h3>
                 <p>Källaren räcker inte längre till. Verkstaden flyttar upp i gatuplan, med ramp och en stor målad skylt över dörren.</p>
             </li>
             <li>
                 <span class="year">2019</span>
-                <h4>Cykeluthyrning startar</h4>
+                <h3>Cykeluthyrning startar</h3>
                 <p>Tio stadscyklar och en lådcykel köps in, och grannskapet börjar hyra cyklar för dagsutflykter.</p>
             </li>
             <li>
                 <span class="year">2023</span>
-                <h4>Elias börjar</h4>
+                <h3>Elias börjar</h3>
                 <p>Verkstaden växer till fyra mekaniker och öppettiderna utökas till helger.</p>
             </li>
         </ol>
@@ -135,18 +122,19 @@
             <div>
                 <span>Ramp in</span>
                 <b>för alla</b>
+            </div>
         </div>
     
     </main>
 
     <footer class="footer">
         <p>© Cykelverkstan Ekorren 2026</p>
-        <div class="footer-links">
-            <a href="contact.html#vanliga-fragor">FAQ</a>
-            <a href="contact.html#hitta-hit">Hitta hit</a>
-            <a href="about.html">Om oss</a>
-            <a href="contact.html#oppettider">Öppettider</a>
-        </div>
+    <nav class="footer-links" aria-label="Sidfot">
+        <a href="contact.html#vanliga-fragor">Vanliga frågor</a>
+        <a href="contact.html#hitta-hit">Hitta hit</a>
+        <a href="about.html">Om oss</a>
+        <a href="contact.html#oppettider">Öppettider</a>
+    </nav>
     </footer>
 
 </body>
