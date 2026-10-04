@@ -88,6 +88,11 @@ h1 {
      font-size: 16.5px; line-height: 1.6; margin: 0 0 22px; max-width: 470px; 
 }
 
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
 .checks { 
     list-style: none; padding: 0; margin: 28px 0 0; 
 }
