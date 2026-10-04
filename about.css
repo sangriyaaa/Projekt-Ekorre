@@ -26,50 +26,74 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-.navigation, a {
+.navigation a {
     color: #9FB0A0;
+    text-decoration: none;
 }
 
 .navigation {
-    display: flex; 
-    width: auto;
+    display: flex;
     background-color: #1a211d;
     justify-content: space-between;
+    align-items: center;
     border-bottom: solid 1px #2f3630;
-    gap: 20px;
+    padding: 14px 44px;
     position: sticky;
     top: 0px;
     z-index: 100;
 
 }
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.brand { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.brand svg { width: 28px; height: 28px; flex: none; }
-.brand b, .brand small { display: block; }
 
-h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 0,5em;
-    margin-block-end: 0,5em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
+.brand svg { 
+    flex: none; 
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-name {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  color: #f1f4ef;
+}
+
+.logo-tagline {
+  font-family: "Fragment Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9FB0A0;
 }
 
 .links {
-    margin-left: auto;
-    align-self: center;
+  display: flex;
+  gap: 29px;
 }
 
-a {
-    padding: 10px;
-    text-decoration: none;
+.links a {
+  color: #a5b5a8;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.links a:hover,
+.links a[aria-current="page"] {
+  color: #f1f4ef;
+}
+
+.navigation a:focus-visible {
+    outline: 2px solid #5ecba1;
+    outline-offset: 4px;
 }
 
 main { 
