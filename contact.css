@@ -57,18 +57,16 @@
   padding: 20px;
 }
 
-p, summary {
-  color: #9FB0A0;
-}
-
+/* p, summary {
+    color: #9FB0A0;
+} duplicate */
 address {
   font-style: normal;
 }
 
-input {
-  display: flex;
-}
-
+/* input {
+    display: flex;
+} */
 button {
   background-color: #DD5B0C;
   border: none;
@@ -81,6 +79,7 @@ button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  align-self: stretch;
 }
 
 .kontakt-topp {
@@ -93,13 +92,31 @@ label {
   color: #eef2ec;
 }
 
-textarea {
-  display: flex;
+/* textarea {
+    display: flex;
+} */
+details:last-of-type {
+  border-bottom: solid 1px #2f3630;
+}
+
+details {
+  border-top: solid 1px #2f3630;
+  padding: 16px 0;
+}
+
+details p {
+  margin-top: 8px;
 }
 
 summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
   list-style: none;
   cursor: pointer;
+  color: #eef2ec;
+  font-weight: 700;
 }
 
 summary::-webkit-details-marker {
@@ -109,6 +126,11 @@ summary::-webkit-details-marker {
 summary::after {
   content: "+";
   color: #DD5B0C;
+}
+
+summary:focus-visible {
+  outline: 3px solid #2C6E9B;
+  outline-offset: 2px;
 }
 
 details[open] summary::after {
@@ -122,13 +144,12 @@ address svg {
   padding-right: 8px;
 }
 
-address > div {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-bottom: 20px;
-}
-
+/* address > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 20px;
+} duplicate */
 address p {
   margin: 0;
 }
@@ -190,7 +211,6 @@ a {
 
 .karta {
   width: 100%;
-  height: auto;
   border-radius: 8px;
   border: 1px solid #2f3630;
   overflow: hidden;
@@ -198,22 +218,62 @@ a {
 
 .karta iframe {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 4/3;
   display: block;
   border: 0;
 }
 
-@media screen and (min-width: 992px) {
-  .kontakt-topp {
-    flex-direction: row;
-    align-items: start;
-  }
-  .kontakt-info,
-  .kontakt-topp form {
-    flex: 1;
-  }
-  .karta {
-    width: 60%;
+.faq {
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+form h2 {
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #1F281F;
+  border: 1px solid #2f3630;
+  border-radius: 8px;
+  color: #eef2ec;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #6b7a70;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #6b7a70;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 3px solid #2C6E9B;
+  outline-offset: 2px;
+}
+
+@media screen and (min-width: 576px) {
+  form button {
+    align-self: start;
   }
 }
 @media screen and (min-width: 768px) {
@@ -223,16 +283,20 @@ a {
   .transport {
     flex-direction: row;
   }
-  .karta {
-    width: 60%;
+  /* .karta {
+       width: 60%;
+   } using aspect-ratio in iframe instead*/
+  .faq {
+    max-width: 70%;
   }
 }
-@media screen and (min-width: 576px) {
-  .transport {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 992px) {
+  .kontakt-topp {
+    flex-direction: row;
+    align-items: start;
   }
-  .karta {
-    width: 100%;
+  .kontakt-info,
+  .kontakt-topp form {
+    flex: 1;
   }
 }/*# sourceMappingURL=contact.css.map */
