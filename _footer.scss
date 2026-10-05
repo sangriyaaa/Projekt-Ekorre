@@ -1,0 +1,17 @@
+.footer {
+    display: flex; 
+    width: auto;   
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    background-color: #1F281F;
+    border-top: 1px solid #2f3630;
+    padding: 20px;
+}
+.footer a {
+    padding: 10px;
+    text-decoration: none;
+    color:#9fb0a0;
+
+}
